@@ -1,14 +1,12 @@
 import "../styles/main.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Navbar />
+    <div className="flex flex-col bg-black h-screen font-mono">
+      <Header />
       <Component {...pageProps} />
-      <Footer />
-    </>
+    </div>
   );
 }
 
